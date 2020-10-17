@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,28 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_image" translatesAutoresizingMaskIntoConstraints="NO" id="409-Tn-8Ug">
-                                <rect key="frame" x="41.5" y="287.5" width="331" height="331"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AwayChatText" translatesAutoresizingMaskIntoConstraints="NO" id="alR-mU-bUf">
+                                <rect key="frame" x="79" y="320" width="256" height="256"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="409-Tn-8Ug" secondAttribute="height" multiplier="1:1" id="0b6-bx-sOq"/>
+                                    <constraint firstAttribute="width" constant="256" id="Kho-vP-vTo"/>
+                                    <constraint firstAttribute="width" secondItem="alR-mU-bUf" secondAttribute="height" multiplier="1:1" id="M84-Nr-OPF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AwayChatLogo" translatesAutoresizingMaskIntoConstraints="NO" id="acS-rD-iij">
+                                <rect key="frame" x="177" y="360" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="acS-rD-iij" secondAttribute="height" multiplier="1:1" id="11v-1W-omn"/>
+                                    <constraint firstAttribute="width" constant="60" id="ObG-7E-F2s"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="1" green="0.47058823529411764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="409-Tn-8Ug" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="17y-77-xgU"/>
-                            <constraint firstItem="409-Tn-8Ug" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aXR-4g-LqT"/>
-                            <constraint firstItem="409-Tn-8Ug" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.799517" id="ztN-j6-zUF"/>
+                            <constraint firstItem="alR-mU-bUf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Bjk-WV-knd"/>
+                            <constraint firstItem="acS-rD-iij" firstAttribute="centerX" secondItem="alR-mU-bUf" secondAttribute="centerX" id="Fzl-yK-eQ6"/>
+                            <constraint firstItem="alR-mU-bUf" firstAttribute="top" secondItem="acS-rD-iij" secondAttribute="bottom" constant="-100" id="aJA-7w-lpT"/>
+                            <constraint firstItem="alR-mU-bUf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="j8F-AS-sCl"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logo_image" width="880" height="777"/>
+        <image name="AwayChatLogo" width="256" height="256"/>
+        <image name="AwayChatText" width="256" height="256"/>
     </resources>
 </document>
