@@ -2,7 +2,7 @@
 //  Constants.swift
 //  Away Chat
 //
-//  Created by Sukhwinder singh Warring on 16/10/20.
+//  Created by Shashank Panwar Warring on 16/10/20.
 //
 
 import Foundation
