@@ -22,6 +22,7 @@
 		BBDAC4D0253B8B050095B635 /* CredentialValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4CF253B8B050095B635 /* CredentialValidator.swift */; };
 		BBDAC4D6253B8D130095B635 /* ValidatorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4D5253B8D130095B635 /* ValidatorResponse.swift */; };
 		BBDAC4DA253B91830095B635 /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4D9253B91830095B635 /* EmailValidation.swift */; };
+		BBDAC4DF253C3C8A0095B635 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4DE253C3C890095B635 /* UIViewController+Extension.swift */; };
 		BBF39E152538C03D00AE5537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF39E142538C03D00AE5537 /* AppDelegate.swift */; };
 		BBF39E172538C03D00AE5537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF39E162538C03D00AE5537 /* SceneDelegate.swift */; };
 		BBF39E1C2538C03D00AE5537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF39E1A2538C03D00AE5537 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		BBDAC4CF253B8B050095B635 /* CredentialValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialValidator.swift; sourceTree = "<group>"; };
 		BBDAC4D5253B8D130095B635 /* ValidatorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorResponse.swift; sourceTree = "<group>"; };
 		BBDAC4D9253B91830095B635 /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
+		BBDAC4DE253C3C890095B635 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		BBF39E112538C03D00AE5537 /* Away Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Away Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF39E142538C03D00AE5537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF39E162538C03D00AE5537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				BBF39E402538D2ED00AE5537 /* String+Extension.swift */,
 				BBDAC49E253B5D7B0095B635 /* UIView+Extension.swift */,
+				BBDAC4DE253C3C890095B635 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				BBDAC4A2253B6C950095B635 /* SignUpFirstVC.swift in Sources */,
 				BBF39E152538C03D00AE5537 /* AppDelegate.swift in Sources */,
 				BBDAC4DA253B91830095B635 /* EmailValidation.swift in Sources */,
+				BBDAC4DF253C3C8A0095B635 /* UIViewController+Extension.swift in Sources */,
 				BB58F666253B2867003A5C6B /* LoginVC.swift in Sources */,
 				BBDAC49F253B5D7B0095B635 /* UIView+Extension.swift in Sources */,
 				BBDAC4CD253B88D80095B635 /* SignUpRequest.swift in Sources */,
@@ -524,7 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69YLC635WW;
+				DEVELOPMENT_TEAM = 7Q634AG3N6;
 				INFOPLIST_FILE = "Away Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -545,7 +549,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69YLC635WW;
+				DEVELOPMENT_TEAM = 7Q634AG3N6;
 				INFOPLIST_FILE = "Away Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

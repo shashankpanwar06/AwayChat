@@ -9,10 +9,15 @@ import UIKit
 
 class SignUpSecondVC: UIViewController {
 
+    //MARK:- Properties/Outlets
     
-    
+    @IBOutlet weak var heading_label: UILabel!
+    @IBOutlet weak var subHeading_label: UILabel!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var firstName_field: UITextField!
+    @IBOutlet weak var lastName_field: UITextField!
     
+    //MARK:- View Controller Life Cycle.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +37,31 @@ class SignUpSecondVC: UIViewController {
 
     }
     
+    //MARK:- Register Button Pressed.
+    
+    @IBAction func registerPressed(_ sender: DesignableButton) {
+        print("Register Pressed!")
+    }
+    
+    //MARK:- Already Have An Accont Button Action.
+    
+    @IBAction func alreadyHaveAccount(_ sender: UIButton) {
+        self.setLoginControllerRootVC()
+    }
+    
+    //MARK:- Help Button Action.
+    
+    @IBAction func helpPressed(_ sender: UIButton) {
+        print("Help Pressed!")
+    }
     
     
     
+}//.
+
+//MARK:- Extension for helper methods.
+
+extension SignUpSecondVC{
     
     
     
