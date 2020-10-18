@@ -23,6 +23,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Geometos.ttf</string>
+		<string>bill_corporate_narrow_medium.ttf</string>
+		<string>bill_corporate narrow_light.ttf</string>
+		<string>bill_corporate narrow_bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

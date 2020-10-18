@@ -3,11 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		489E2BED8998233F6F84FA31 /* Pods_Away_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4897A868FA2854111637D7B7 /* Pods_Away_Chat.framework */; };
 		BB205653253A0B4900AC39E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB205652253A0B4900AC39E0 /* Constants.swift */; };
+		BB58F666253B2867003A5C6B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58F665253B2867003A5C6B /* LoginVC.swift */; };
+		BBDAC499253B2DE70095B635 /* bill_corporate narrow_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC496253B2DE70095B635 /* bill_corporate narrow_light.ttf */; };
+		BBDAC49A253B2DE70095B635 /* bill_corporate_narrow_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC497253B2DE70095B635 /* bill_corporate_narrow_medium.ttf */; };
+		BBDAC49B253B2DE70095B635 /* bill_corporate narrow_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC498253B2DE70095B635 /* bill_corporate narrow_bold.ttf */; };
+		BBDAC49F253B5D7B0095B635 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC49E253B5D7B0095B635 /* UIView+Extension.swift */; };
+		BBDAC4A2253B6C950095B635 /* SignUpFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4A1253B6C950095B635 /* SignUpFirstVC.swift */; };
+		BBDAC4A5253B70010095B635 /* SignUpSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4A4253B70010095B635 /* SignUpSecondVC.swift */; };
+		BBDAC4A9253B82FF0095B635 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC4A8253B82FF0095B635 /* GoogleService-Info.plist */; };
+		BBDAC4C8253B886E0095B635 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4C7253B886E0095B635 /* SignUpViewModel.swift */; };
+		BBDAC4CD253B88D80095B635 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4CC253B88D80095B635 /* SignUpRequest.swift */; };
+		BBDAC4D0253B8B050095B635 /* CredentialValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4CF253B8B050095B635 /* CredentialValidator.swift */; };
+		BBDAC4D6253B8D130095B635 /* ValidatorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4D5253B8D130095B635 /* ValidatorResponse.swift */; };
+		BBDAC4DA253B91830095B635 /* EmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDAC4D9253B91830095B635 /* EmailValidation.swift */; };
 		BBF39E152538C03D00AE5537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF39E142538C03D00AE5537 /* AppDelegate.swift */; };
 		BBF39E172538C03D00AE5537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF39E162538C03D00AE5537 /* SceneDelegate.swift */; };
 		BBF39E1C2538C03D00AE5537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBF39E1A2538C03D00AE5537 /* Main.storyboard */; };
@@ -21,7 +35,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4897A868FA2854111637D7B7 /* Pods_Away_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Away_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB205652253A0B4900AC39E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB58F665253B2867003A5C6B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BBDAC496253B2DE70095B635 /* bill_corporate narrow_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bill_corporate narrow_light.ttf"; sourceTree = "<group>"; };
+		BBDAC497253B2DE70095B635 /* bill_corporate_narrow_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bill_corporate_narrow_medium.ttf; sourceTree = "<group>"; };
+		BBDAC498253B2DE70095B635 /* bill_corporate narrow_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bill_corporate narrow_bold.ttf"; sourceTree = "<group>"; };
+		BBDAC49E253B5D7B0095B635 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		BBDAC4A1253B6C950095B635 /* SignUpFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstVC.swift; sourceTree = "<group>"; };
+		BBDAC4A4253B70010095B635 /* SignUpSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSecondVC.swift; sourceTree = "<group>"; };
+		BBDAC4A8253B82FF0095B635 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BBDAC4C7253B886E0095B635 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		BBDAC4CC253B88D80095B635 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		BBDAC4CF253B8B050095B635 /* CredentialValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialValidator.swift; sourceTree = "<group>"; };
+		BBDAC4D5253B8D130095B635 /* ValidatorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorResponse.swift; sourceTree = "<group>"; };
+		BBDAC4D9253B91830095B635 /* EmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidation.swift; sourceTree = "<group>"; };
 		BBF39E112538C03D00AE5537 /* Away Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Away Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF39E142538C03D00AE5537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBF39E162538C03D00AE5537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +62,8 @@
 		BBF39E392538CDCF00AE5537 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		BBF39E402538D2ED00AE5537 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BBF39E442538D3B000AE5537 /* HelperMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperMethods.swift; sourceTree = "<group>"; };
+		C9498B7F5DA0AE747979FE81 /* Pods-Away Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Chat.release.xcconfig"; path = "Target Support Files/Pods-Away Chat/Pods-Away Chat.release.xcconfig"; sourceTree = "<group>"; };
+		F672273A42C04E2BAD921131 /* Pods-Away Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Away Chat.debug.xcconfig"; path = "Target Support Files/Pods-Away Chat/Pods-Away Chat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +71,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489E2BED8998233F6F84FA31 /* Pods_Away_Chat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64BD30035524AB1E271220E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F672273A42C04E2BAD921131 /* Pods-Away Chat.debug.xcconfig */,
+				C9498B7F5DA0AE747979FE81 /* Pods-Away Chat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4EED309CAA7398AE209A1FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4897A868FA2854111637D7B7 /* Pods_Away_Chat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB58F662253B2796003A5C6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BBDAC4C6253B88370095B635 /* SignUp */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB58F663253B279E003A5C6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BBDAC4CB253B88A70095B635 /* SignUpModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BBDAC4C6253B88370095B635 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				BBDAC4C7253B886E0095B635 /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		BBDAC4CB253B88A70095B635 /* SignUpModel */ = {
+			isa = PBXGroup;
+			children = (
+				BBDAC4CC253B88D80095B635 /* SignUpRequest.swift */,
+			);
+			path = SignUpModel;
+			sourceTree = "<group>";
+		};
+		BBDAC4D4253B8CA40095B635 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				BBDAC4CF253B8B050095B635 /* CredentialValidator.swift */,
+				BBDAC4D5253B8D130095B635 /* ValidatorResponse.swift */,
+				BBDAC4D9253B91830095B635 /* EmailValidation.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		BBF39E082538C03D00AE5537 = {
 			isa = PBXGroup;
 			children = (
 				BBF39E132538C03D00AE5537 /* Away Chat */,
 				BBF39E122538C03D00AE5537 /* Products */,
+				64BD30035524AB1E271220E2 /* Pods */,
+				B4EED309CAA7398AE209A1FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,16 +158,18 @@
 		BBF39E132538C03D00AE5537 /* Away Chat */ = {
 			isa = PBXGroup;
 			children = (
+				BBDAC4D4253B8CA40095B635 /* Validator */,
+				BB58F663253B279E003A5C6B /* Model */,
+				BBF39E2C2538C13E00AE5537 /* View */,
+				BB58F662253B2796003A5C6B /* ViewModel */,
 				BBF39E362538CDA400AE5537 /* HelpingClasses */,
 				BBF39E322538C5F500AE5537 /* Fonts */,
-				BBF39E2B2538C10200AE5537 /* Model */,
-				BBF39E2C2538C13E00AE5537 /* View */,
-				BBF39E2D2538C14400AE5537 /* ViewModel */,
 				BBF39E142538C03D00AE5537 /* AppDelegate.swift */,
 				BBF39E162538C03D00AE5537 /* SceneDelegate.swift */,
 				BBF39E1A2538C03D00AE5537 /* Main.storyboard */,
 				BBF39E1D2538C03E00AE5537 /* Assets.xcassets */,
 				BBF39E1F2538C03E00AE5537 /* LaunchScreen.storyboard */,
+				BBDAC4A8253B82FF0095B635 /* GoogleService-Info.plist */,
 				BBF39E222538C03E00AE5537 /* Info.plist */,
 			);
 			path = "Away Chat";
@@ -85,15 +179,11 @@
 			isa = PBXGroup;
 			children = (
 				BBF39E2E2538C3E100AE5537 /* ViewController.swift */,
+				BB58F665253B2867003A5C6B /* LoginVC.swift */,
+				BBDAC4A1253B6C950095B635 /* SignUpFirstVC.swift */,
+				BBDAC4A4253B70010095B635 /* SignUpSecondVC.swift */,
 			);
 			path = LoginViews;
-			sourceTree = "<group>";
-		};
-		BBF39E2B2538C10200AE5537 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BBF39E2C2538C13E00AE5537 /* View */ = {
@@ -104,16 +194,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		BBF39E2D2538C14400AE5537 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		BBF39E322538C5F500AE5537 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BBDAC498253B2DE70095B635 /* bill_corporate narrow_bold.ttf */,
+				BBDAC496253B2DE70095B635 /* bill_corporate narrow_light.ttf */,
+				BBDAC497253B2DE70095B635 /* bill_corporate_narrow_medium.ttf */,
 				BBF39E332538C60900AE5537 /* Geometos.ttf */,
 			);
 			path = Fonts;
@@ -141,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF39E402538D2ED00AE5537 /* String+Extension.swift */,
+				BBDAC49E253B5D7B0095B635 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBF39E252538C03E00AE5537 /* Build configuration list for PBXNativeTarget "Away Chat" */;
 			buildPhases = (
+				C72340B4A155A5B94390653B /* [CP] Check Pods Manifest.lock */,
 				BBF39E0D2538C03D00AE5537 /* Sources */,
 				BBF39E0E2538C03D00AE5537 /* Frameworks */,
 				BBF39E0F2538C03D00AE5537 /* Resources */,
+				84F5DFA195F0ECCD770474CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,7 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBF39E212538C03E00AE5537 /* LaunchScreen.storyboard in Resources */,
+				BBDAC4A9253B82FF0095B635 /* GoogleService-Info.plist in Resources */,
 				BBF39E1E2538C03E00AE5537 /* Assets.xcassets in Resources */,
+				BBDAC499253B2DE70095B635 /* bill_corporate narrow_light.ttf in Resources */,
+				BBDAC49A253B2DE70095B635 /* bill_corporate_narrow_medium.ttf in Resources */,
+				BBDAC49B253B2DE70095B635 /* bill_corporate narrow_bold.ttf in Resources */,
 				BBF39E1C2538C03D00AE5537 /* Main.storyboard in Resources */,
 				BBF39E342538C60900AE5537 /* Geometos.ttf in Resources */,
 			);
@@ -220,18 +313,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84F5DFA195F0ECCD770474CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Chat/Pods-Away Chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Away Chat/Pods-Away Chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Away Chat/Pods-Away Chat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C72340B4A155A5B94390653B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Away Chat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BBF39E0D2538C03D00AE5537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BBF39E2F2538C3E100AE5537 /* ViewController.swift in Sources */,
+				BBDAC4A2253B6C950095B635 /* SignUpFirstVC.swift in Sources */,
 				BBF39E152538C03D00AE5537 /* AppDelegate.swift in Sources */,
+				BBDAC4DA253B91830095B635 /* EmailValidation.swift in Sources */,
+				BB58F666253B2867003A5C6B /* LoginVC.swift in Sources */,
+				BBDAC49F253B5D7B0095B635 /* UIView+Extension.swift in Sources */,
+				BBDAC4CD253B88D80095B635 /* SignUpRequest.swift in Sources */,
 				BBF39E452538D3B000AE5537 /* HelperMethods.swift in Sources */,
 				BBF39E3A2538CDCF00AE5537 /* DesignableButton.swift in Sources */,
 				BB205653253A0B4900AC39E0 /* Constants.swift in Sources */,
+				BBDAC4D0253B8B050095B635 /* CredentialValidator.swift in Sources */,
 				BBF39E412538D2ED00AE5537 /* String+Extension.swift in Sources */,
+				BBDAC4D6253B8D130095B635 /* ValidatorResponse.swift in Sources */,
 				BBF39E172538C03D00AE5537 /* SceneDelegate.swift in Sources */,
+				BBDAC4C8253B886E0095B635 /* SignUpViewModel.swift in Sources */,
+				BBDAC4A5253B70010095B635 /* SignUpSecondVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +519,7 @@
 		};
 		BBF39E262538C03E00AE5537 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F672273A42C04E2BAD921131 /* Pods-Away Chat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +540,7 @@
 		};
 		BBF39E272538C03E00AE5537 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9498B7F5DA0AE747979FE81 /* Pods-Away Chat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

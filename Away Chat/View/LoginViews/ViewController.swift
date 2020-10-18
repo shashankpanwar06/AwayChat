@@ -26,5 +26,36 @@ class ViewController: UIViewController {
 
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
+    }
+    
+    
+    @IBAction func signUp(_ sender: DesignableButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpFirstVC") as! SignUpFirstVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func login(_ sender: DesignableButton) {
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
+    
+    
+    
+    
     
 }//..
