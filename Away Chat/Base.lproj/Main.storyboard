@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -34,19 +35,42 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOf-h7-cqr">
                                         <rect key="frame" x="30" y="0.0" width="354" height="778"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFC-L7-Rvh">
-                                                <rect key="frame" x="0.0" y="4" width="106.5" height="23"/>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="22"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFC-L7-Rvh">
+                                                <rect key="frame" x="113.5" y="20" width="127" height="37.5"/>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="25"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in One Place" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-tA-CoA">
+                                                <rect key="frame" x="66" y="225.5" width="222" height="60"/>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everything" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4j-4I-qtT">
+                                                <rect key="frame" x="81" y="137.5" width="192.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="iKl-XE-iJ2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="40"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W6-de-7mz">
+                                                <rect key="frame" x="81.5" y="285.5" width="191.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="wT7-HL-Pdx"/>
+                                                </constraints>
+                                                <string key="text">Stay connected with friends and family,
+no matter where you are</string>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="11"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7W-fa-0LW" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
-                                                <rect key="frame" x="167" y="0.0" width="88.5" height="31"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="W7W-fa-0LW" secondAttribute="height" multiplier="2:0.7" id="qFk-3Q-Kyb"/>
-                                                </constraints>
+                                                <rect key="frame" x="35.5" y="350.5" width="283" height="46.5"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="14"/>
-                                                <state key="normal" title="Sign Up">
+                                                <state key="normal" title="Log In">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -64,16 +88,31 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9O-D4-qLe"/>
+                                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOL-6Z-QGU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-00-YZO" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
-                                                <rect key="frame" x="265.5" y="0.0" width="88.5" height="31"/>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8o0-Ka-XeT">
+                                                <rect key="frame" x="35.5" y="417" width="283" height="0.5"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Ft1-00-YZO" secondAttribute="height" multiplier="2:0.7" id="AIg-sm-XqF"/>
+                                                    <constraint firstAttribute="height" constant="0.5" id="D7R-ls-UPM"/>
                                                 </constraints>
+                                            </view>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wA-mu-0GT">
+                                                <rect key="frame" x="167" y="407.5" width="20" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="9wA-mu-0GT" secondAttribute="height" multiplier="1:1" id="jWn-Cz-jkM"/>
+                                                    <constraint firstAttribute="width" constant="20" id="sLY-Ko-dsA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="10"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ft1-00-YZO" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
+                                                <rect key="frame" x="35.5" y="437.5" width="283" height="47"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="14"/>
-                                                <state key="normal" title="Log In">
+                                                <state key="normal" title="Sign Up Now">
                                                     <color key="titleColor" red="1" green="0.47058823529411764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -94,112 +133,39 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EbU-na-aGb"/>
+                                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nIT-Q0-ISW"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everything" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4j-4I-qtT">
-                                                <rect key="frame" x="0.0" y="77" width="188.5" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="iKl-XE-iJ2"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="40"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About You All" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlC-V1-dUM">
-                                                <rect key="frame" x="0.0" y="127" width="240.5" height="50"/>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="40"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in One Place" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouL-tA-CoA">
-                                                <rect key="frame" x="0.0" y="177" width="227" height="50"/>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="40"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W6-de-7mz">
-                                                <rect key="frame" x="0.0" y="237" width="246" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="wT7-HL-Pdx"/>
-                                                </constraints>
-                                                <string key="text">Stay connected with friends and family,
-no matter where you are</string>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="14"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emn-xj-GOj" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="307" width="120.5" height="48.5"/>
-                                                <color key="backgroundColor" red="1" green="0.47058823529411764" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Emn-xj-GOj" secondAttribute="height" multiplier="2:0.8" id="Cul-VL-RFT"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="14"/>
-                                                <state key="normal" title="Sign Up Now">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="3"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or Log In" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hy0-c4-tGv">
-                                                <rect key="frame" x="130.5" y="324" width="48" height="14"/>
-                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="12"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_image" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-fr-paa">
-                                                <rect key="frame" x="0.0" y="365.5" width="354" height="412.5"/>
-                                            </imageView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXJ-Sj-JrA">
-                                                <rect key="frame" x="145" y="339" width="33.5" height="1"/>
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="P7D-Ki-5bh"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="pFC-L7-Rvh" firstAttribute="leading" secondItem="WOf-h7-cqr" secondAttribute="leading" id="1PW-fA-vcu"/>
-                                            <constraint firstItem="v2T-fr-paa" firstAttribute="leading" secondItem="WOf-h7-cqr" secondAttribute="leading" id="3cA-xE-hTo"/>
-                                            <constraint firstItem="rlC-V1-dUM" firstAttribute="leading" secondItem="M4j-4I-qtT" secondAttribute="leading" id="3yg-2Q-RDd"/>
-                                            <constraint firstItem="6W6-de-7mz" firstAttribute="top" secondItem="ouL-tA-CoA" secondAttribute="bottom" constant="10" id="9M3-Yf-wbH"/>
-                                            <constraint firstItem="pFC-L7-Rvh" firstAttribute="centerY" secondItem="W7W-fa-0LW" secondAttribute="centerY" id="9Up-jF-LgT"/>
-                                            <constraint firstItem="SXJ-Sj-JrA" firstAttribute="trailing" secondItem="hy0-c4-tGv" secondAttribute="trailing" id="CKG-IT-1wQ"/>
-                                            <constraint firstItem="rlC-V1-dUM" firstAttribute="top" secondItem="M4j-4I-qtT" secondAttribute="bottom" id="D6n-Ta-IAS"/>
-                                            <constraint firstItem="SXJ-Sj-JrA" firstAttribute="width" secondItem="hy0-c4-tGv" secondAttribute="width" multiplier="0.7" id="E0a-bH-Umo"/>
-                                            <constraint firstItem="hy0-c4-tGv" firstAttribute="centerY" secondItem="Emn-xj-GOj" secondAttribute="centerY" id="FbO-V4-qOo"/>
-                                            <constraint firstItem="ouL-tA-CoA" firstAttribute="leading" secondItem="rlC-V1-dUM" secondAttribute="leading" id="Iqu-18-43X"/>
-                                            <constraint firstItem="M4j-4I-qtT" firstAttribute="top" secondItem="pFC-L7-Rvh" secondAttribute="bottom" constant="50" id="LBe-Sc-CPX"/>
-                                            <constraint firstItem="ouL-tA-CoA" firstAttribute="height" secondItem="rlC-V1-dUM" secondAttribute="height" id="M8G-z3-x14"/>
-                                            <constraint firstAttribute="trailing" secondItem="v2T-fr-paa" secondAttribute="trailing" id="Mme-Zp-njd"/>
-                                            <constraint firstItem="Emn-xj-GOj" firstAttribute="width" secondItem="WOf-h7-cqr" secondAttribute="width" multiplier="0.34" id="O81-5D-lNe"/>
-                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="leading" secondItem="W7W-fa-0LW" secondAttribute="trailing" constant="10" id="Qf5-pB-W5K"/>
-                                            <constraint firstItem="SXJ-Sj-JrA" firstAttribute="top" secondItem="hy0-c4-tGv" secondAttribute="bottom" constant="1" id="RVo-u9-iLJ"/>
-                                            <constraint firstItem="v2T-fr-paa" firstAttribute="top" secondItem="Emn-xj-GOj" secondAttribute="bottom" constant="10" id="UDB-Te-k2Z"/>
-                                            <constraint firstItem="M4j-4I-qtT" firstAttribute="leading" secondItem="pFC-L7-Rvh" secondAttribute="leading" id="Zgt-In-Xax"/>
-                                            <constraint firstItem="W7W-fa-0LW" firstAttribute="centerY" secondItem="Ft1-00-YZO" secondAttribute="centerY" id="bBe-R8-YIK"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ft1-00-YZO" secondAttribute="trailing" id="dkl-Ev-Hgn"/>
-                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="width" secondItem="WOf-h7-cqr" secondAttribute="width" multiplier="0.25" id="hh5-eK-umf"/>
-                                            <constraint firstAttribute="bottom" secondItem="v2T-fr-paa" secondAttribute="bottom" id="hjH-1f-cYp"/>
-                                            <constraint firstItem="hy0-c4-tGv" firstAttribute="leading" secondItem="Emn-xj-GOj" secondAttribute="trailing" constant="10" id="jxo-an-hoQ"/>
-                                            <constraint firstItem="Emn-xj-GOj" firstAttribute="top" secondItem="6W6-de-7mz" secondAttribute="bottom" constant="20" id="qi6-wb-SQR"/>
-                                            <constraint firstItem="ouL-tA-CoA" firstAttribute="top" secondItem="rlC-V1-dUM" secondAttribute="bottom" id="tNf-T1-8YJ"/>
-                                            <constraint firstItem="6W6-de-7mz" firstAttribute="leading" secondItem="M4j-4I-qtT" secondAttribute="leading" id="txh-fv-auR"/>
-                                            <constraint firstItem="Emn-xj-GOj" firstAttribute="leading" secondItem="6W6-de-7mz" secondAttribute="leading" id="uJ9-Jy-13e"/>
-                                            <constraint firstItem="rlC-V1-dUM" firstAttribute="height" secondItem="M4j-4I-qtT" secondAttribute="height" id="uo2-Na-z1B"/>
-                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="top" secondItem="WOf-h7-cqr" secondAttribute="top" id="urU-xb-shT"/>
-                                            <constraint firstItem="pFC-L7-Rvh" firstAttribute="height" secondItem="WOf-h7-cqr" secondAttribute="height" multiplier="0.03" id="vKC-Fc-RZ7"/>
-                                            <constraint firstItem="W7W-fa-0LW" firstAttribute="width" secondItem="Ft1-00-YZO" secondAttribute="width" id="xSr-6b-LYp"/>
+                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="centerX" secondItem="8o0-Ka-XeT" secondAttribute="centerX" id="28M-bH-iq4"/>
+                                            <constraint firstItem="9wA-mu-0GT" firstAttribute="centerX" secondItem="8o0-Ka-XeT" secondAttribute="centerX" id="8eq-kb-2sM"/>
+                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="height" secondItem="W7W-fa-0LW" secondAttribute="height" id="8gU-hy-nYT"/>
+                                            <constraint firstItem="W7W-fa-0LW" firstAttribute="top" secondItem="6W6-de-7mz" secondAttribute="bottom" constant="15" id="Dwk-vf-U3W"/>
+                                            <constraint firstItem="W7W-fa-0LW" firstAttribute="width" secondItem="WOf-h7-cqr" secondAttribute="width" multiplier="0.8" id="FeY-sJ-ZD4"/>
+                                            <constraint firstItem="8o0-Ka-XeT" firstAttribute="top" secondItem="W7W-fa-0LW" secondAttribute="bottom" constant="20" id="FxO-hX-RUY"/>
+                                            <constraint firstItem="6W6-de-7mz" firstAttribute="top" secondItem="ouL-tA-CoA" secondAttribute="bottom" id="ICr-nj-AC4"/>
+                                            <constraint firstItem="6W6-de-7mz" firstAttribute="centerX" secondItem="ouL-tA-CoA" secondAttribute="centerX" id="W9E-ge-jjZ"/>
+                                            <constraint firstItem="9wA-mu-0GT" firstAttribute="centerY" secondItem="8o0-Ka-XeT" secondAttribute="centerY" id="Wfs-aK-r97"/>
+                                            <constraint firstItem="8o0-Ka-XeT" firstAttribute="width" secondItem="W7W-fa-0LW" secondAttribute="width" id="czJ-VO-vTR"/>
+                                            <constraint firstItem="8o0-Ka-XeT" firstAttribute="centerX" secondItem="W7W-fa-0LW" secondAttribute="centerX" id="fQq-e1-t3U"/>
+                                            <constraint firstItem="pFC-L7-Rvh" firstAttribute="top" secondItem="WOf-h7-cqr" secondAttribute="top" constant="20" id="fXQ-gW-Hcg"/>
+                                            <constraint firstItem="pFC-L7-Rvh" firstAttribute="centerX" secondItem="WOf-h7-cqr" secondAttribute="centerX" id="j1s-sU-QoN"/>
+                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="top" secondItem="8o0-Ka-XeT" secondAttribute="bottom" constant="20" id="kau-85-9tJ"/>
+                                            <constraint firstItem="W7W-fa-0LW" firstAttribute="centerX" secondItem="6W6-de-7mz" secondAttribute="centerX" id="mOk-L2-EIe"/>
+                                            <constraint firstItem="M4j-4I-qtT" firstAttribute="centerX" secondItem="pFC-L7-Rvh" secondAttribute="centerX" id="mr6-ph-UDk"/>
+                                            <constraint firstItem="Ft1-00-YZO" firstAttribute="width" secondItem="W7W-fa-0LW" secondAttribute="width" id="pVp-yR-CVe"/>
+                                            <constraint firstItem="W7W-fa-0LW" firstAttribute="height" secondItem="WOf-h7-cqr" secondAttribute="height" multiplier="0.06" id="qlR-b8-V6M"/>
+                                            <constraint firstItem="M4j-4I-qtT" firstAttribute="top" secondItem="pFC-L7-Rvh" secondAttribute="bottom" constant="80" id="yGn-Ah-ddm"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About You All" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlC-V1-dUM">
+                                        <rect key="frame" x="82.5" y="177.5" width="249.5" height="60"/>
+                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="40"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -207,8 +173,12 @@ no matter where you are</string>
                                     <constraint firstItem="WOf-h7-cqr" firstAttribute="leading" secondItem="C5f-Ae-Sk0" secondAttribute="leading" constant="30" id="CiV-j1-2xK"/>
                                     <constraint firstAttribute="bottom" secondItem="WOf-h7-cqr" secondAttribute="bottom" id="IZ1-BK-G9H"/>
                                     <constraint firstItem="WOf-h7-cqr" firstAttribute="centerX" secondItem="C5f-Ae-Sk0" secondAttribute="centerX" id="JMa-ep-QQ3"/>
+                                    <constraint firstItem="rlC-V1-dUM" firstAttribute="top" secondItem="M4j-4I-qtT" secondAttribute="bottom" constant="-10" id="QfM-4K-BTi"/>
+                                    <constraint firstItem="rlC-V1-dUM" firstAttribute="centerX" secondItem="M4j-4I-qtT" secondAttribute="centerX" id="UNj-Zl-UdO"/>
                                     <constraint firstAttribute="trailing" secondItem="WOf-h7-cqr" secondAttribute="trailing" constant="30" id="VDN-te-rI8"/>
+                                    <constraint firstItem="ouL-tA-CoA" firstAttribute="centerX" secondItem="rlC-V1-dUM" secondAttribute="centerX" id="hYF-Vn-1qN"/>
                                     <constraint firstItem="WOf-h7-cqr" firstAttribute="top" secondItem="C5f-Ae-Sk0" secondAttribute="top" id="ov1-Vz-gCr"/>
+                                    <constraint firstItem="ouL-tA-CoA" firstAttribute="top" secondItem="rlC-V1-dUM" secondAttribute="bottom" constant="-12" id="pQK-E3-xov"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -225,17 +195,14 @@ no matter where you are</string>
                     <connections>
                         <outlet property="Heading_label" destination="M4j-4I-qtT" id="Nzh-vZ-3GW"/>
                         <outlet property="appName_label" destination="pFC-L7-Rvh" id="WjV-Pb-VRh"/>
-                        <outlet property="login_button" destination="Ft1-00-YZO" id="5Om-ml-KFN"/>
-                        <outlet property="logo_image" destination="v2T-fr-paa" id="Y2q-ei-RiP"/>
-                        <outlet property="or_Login_Label" destination="hy0-c4-tGv" id="Kcm-gb-1nd"/>
-                        <outlet property="signUpNow_button" destination="Emn-xj-GOj" id="a2Y-VM-3nq"/>
-                        <outlet property="signUp_button" destination="W7W-fa-0LW" id="WrA-8Q-8Wy"/>
+                        <outlet property="login_button" destination="W7W-fa-0LW" id="Tdh-D7-Xt8"/>
+                        <outlet property="signUpNow_button" destination="Ft1-00-YZO" id="Bu1-qQ-9NP"/>
                         <outlet property="subHeading_label" destination="6W6-de-7mz" id="uU9-fb-On9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-322" y="-35"/>
+            <point key="canvasLocation" x="-323.1884057971015" y="-35.491071428571423"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="ANL-K9-nA9">
@@ -249,35 +216,35 @@ no matter where you are</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WpX-C3-NkP">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="857.5"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOG-f7-Ur3">
-                                                <rect key="frame" x="144" y="20" width="126" height="30.5"/>
+                                                <rect key="frame" x="141.5" y="20" width="131" height="39"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="26"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to continue to your AwayChat admin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-JY-Gke">
-                                                <rect key="frame" x="62" y="60.5" width="290.5" height="17.5"/>
+                                                <rect key="frame" x="63.5" y="69" width="287.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkn-rC-14A">
-                                                <rect key="frame" x="41.5" y="98" width="331" height="559"/>
+                                                <rect key="frame" x="41.5" y="111.5" width="331" height="573"/>
                                                 <subviews>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntC-Vp-MV0" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="15" width="291" height="42"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="Roi-ZJ-Zvf">
-                                                                <rect key="frame" x="60" y="11" width="20" height="20"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="Roi-ZJ-Zvf">
+                                                                <rect key="frame" x="50" y="11" width="20" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Roi-ZJ-Zvf" secondAttribute="height" multiplier="1:1" id="80s-6Y-np5"/>
                                                                     <constraint firstAttribute="height" constant="20" id="l3K-Nc-dTy"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In With Apple" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIw-9p-0Xa">
-                                                                <rect key="frame" x="90" y="12.5" width="124" height="17.5"/>
+                                                                <rect key="frame" x="80" y="10" width="125.5" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -298,7 +265,7 @@ no matter where you are</string>
                                                             <constraint firstAttribute="bottom" secondItem="pfG-H3-DX1" secondAttribute="bottom" id="Z7v-ab-jIo"/>
                                                             <constraint firstAttribute="height" constant="42" id="ZQt-sZ-KdU"/>
                                                             <constraint firstItem="FIw-9p-0Xa" firstAttribute="leading" secondItem="Roi-ZJ-Zvf" secondAttribute="trailing" constant="10" id="pCP-a2-qLc"/>
-                                                            <constraint firstItem="Roi-ZJ-Zvf" firstAttribute="leading" secondItem="ntC-Vp-MV0" secondAttribute="leading" constant="60" id="uWW-5s-hme"/>
+                                                            <constraint firstItem="Roi-ZJ-Zvf" firstAttribute="leading" secondItem="ntC-Vp-MV0" secondAttribute="leading" constant="50" id="uWW-5s-hme"/>
                                                             <constraint firstItem="pfG-H3-DX1" firstAttribute="top" secondItem="ntC-Vp-MV0" secondAttribute="top" id="vpC-F5-DAa"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
@@ -313,15 +280,15 @@ no matter where you are</string>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4y-XR-3ZL" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="67" width="291" height="42"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="mei-kz-GYB">
-                                                                <rect key="frame" x="60" y="11" width="20" height="20"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gmail" translatesAutoresizingMaskIntoConstraints="NO" id="mei-kz-GYB">
+                                                                <rect key="frame" x="50" y="11" width="20" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="mei-kz-GYB" secondAttribute="height" multiplier="1:1" id="57p-iZ-4D1"/>
                                                                     <constraint firstAttribute="height" constant="20" id="RVZ-tQ-kPI"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In With Gmail" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVg-ri-4r2">
-                                                                <rect key="frame" x="90" y="12.5" width="124" height="17.5"/>
+                                                                <rect key="frame" x="80" y="10" width="123.5" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -341,7 +308,7 @@ no matter where you are</string>
                                                             <constraint firstItem="mei-kz-GYB" firstAttribute="centerY" secondItem="RVg-ri-4r2" secondAttribute="centerY" id="9L4-5x-IMb"/>
                                                             <constraint firstItem="RVg-ri-4r2" firstAttribute="leading" secondItem="mei-kz-GYB" secondAttribute="trailing" constant="10" id="RdZ-lS-Dzn"/>
                                                             <constraint firstItem="FS0-WQ-Sy1" firstAttribute="top" secondItem="A4y-XR-3ZL" secondAttribute="top" id="ivw-5Q-hrT"/>
-                                                            <constraint firstItem="mei-kz-GYB" firstAttribute="leading" secondItem="A4y-XR-3ZL" secondAttribute="leading" constant="60" id="s6Y-tD-g91"/>
+                                                            <constraint firstItem="mei-kz-GYB" firstAttribute="leading" secondItem="A4y-XR-3ZL" secondAttribute="leading" constant="50" id="s6Y-tD-g91"/>
                                                             <constraint firstAttribute="bottom" secondItem="FS0-WQ-Sy1" secondAttribute="bottom" id="y9L-z4-y44"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
@@ -356,15 +323,15 @@ no matter where you are</string>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TL-CZ-duu" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="119" width="291" height="42"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="PEc-oV-cVw">
-                                                                <rect key="frame" x="60" y="11" width="20" height="20"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fb" translatesAutoresizingMaskIntoConstraints="NO" id="PEc-oV-cVw">
+                                                                <rect key="frame" x="50" y="11" width="20" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="20" id="3sq-Et-CHS"/>
                                                                     <constraint firstAttribute="width" secondItem="PEc-oV-cVw" secondAttribute="height" multiplier="1:1" id="dgl-gC-q3Z"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In With Facebook" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oen-eu-cSc">
-                                                                <rect key="frame" x="90" y="12.5" width="152" height="17.5"/>
+                                                                <rect key="frame" x="80" y="10" width="149" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -379,7 +346,7 @@ no matter where you are</string>
                                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstItem="PEc-oV-cVw" firstAttribute="centerY" secondItem="3TL-CZ-duu" secondAttribute="centerY" id="51E-cH-ZbV"/>
-                                                            <constraint firstItem="PEc-oV-cVw" firstAttribute="leading" secondItem="3TL-CZ-duu" secondAttribute="leading" constant="60" id="9vf-u4-Be6"/>
+                                                            <constraint firstItem="PEc-oV-cVw" firstAttribute="leading" secondItem="3TL-CZ-duu" secondAttribute="leading" constant="50" id="9vf-u4-Be6"/>
                                                             <constraint firstAttribute="trailing" secondItem="dgM-zD-aGA" secondAttribute="trailing" id="GsC-4x-vRL"/>
                                                             <constraint firstItem="PEc-oV-cVw" firstAttribute="centerY" secondItem="oen-eu-cSc" secondAttribute="centerY" id="Ie7-II-4jX"/>
                                                             <constraint firstItem="dgM-zD-aGA" firstAttribute="top" secondItem="3TL-CZ-duu" secondAttribute="top" id="KWf-ZG-Tpq"/>
@@ -399,15 +366,15 @@ no matter where you are</string>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqL-9r-FMZ" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="171" width="291" height="42"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-Cg-gPR">
-                                                                <rect key="frame" x="60" y="11" width="20" height="20"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Twitter" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-Cg-gPR">
+                                                                <rect key="frame" x="50" y="11" width="20" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="KVC-Cg-gPR" secondAttribute="height" multiplier="1:1" id="Zab-UB-Xkj"/>
                                                                     <constraint firstAttribute="height" constant="20" id="dbH-nF-3VC"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In With Twitter" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBy-kP-S7Y">
-                                                                <rect key="frame" x="90" y="12.5" width="129.5" height="17.5"/>
+                                                                <rect key="frame" x="80" y="10" width="131.5" height="22.5"/>
                                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -421,7 +388,7 @@ no matter where you are</string>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
-                                                            <constraint firstItem="KVC-Cg-gPR" firstAttribute="leading" secondItem="YqL-9r-FMZ" secondAttribute="leading" constant="60" id="3Ie-GW-uS4"/>
+                                                            <constraint firstItem="KVC-Cg-gPR" firstAttribute="leading" secondItem="YqL-9r-FMZ" secondAttribute="leading" constant="50" id="3Ie-GW-uS4"/>
                                                             <constraint firstItem="a7R-XT-mV4" firstAttribute="top" secondItem="YqL-9r-FMZ" secondAttribute="top" id="MHk-4F-9j9"/>
                                                             <constraint firstAttribute="trailing" secondItem="a7R-XT-mV4" secondAttribute="trailing" id="SaZ-T4-BMd"/>
                                                             <constraint firstItem="KVC-Cg-gPR" firstAttribute="centerY" secondItem="EBy-kP-S7Y" secondAttribute="centerY" id="V8A-cZ-vif"/>
@@ -458,13 +425,13 @@ no matter where you are</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNq-K8-U8g">
-                                                        <rect key="frame" x="20" y="249" width="69" height="17.5"/>
+                                                        <rect key="frame" x="20" y="249" width="69" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U0T-cx-TfK" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="271.5" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="276.5" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gh8-xZ-NU1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
@@ -490,13 +457,13 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7q-4n-Bnv">
-                                                        <rect key="frame" x="20" y="328.5" width="66.5" height="17.5"/>
+                                                        <rect key="frame" x="20" y="333.5" width="67" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVH-Vh-dr2" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="351" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="361" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uTS-cm-GXN">
                                                                 <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
@@ -522,7 +489,7 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-h9-hBr">
-                                                        <rect key="frame" x="20" y="408" width="20" height="20"/>
+                                                        <rect key="frame" x="20" y="418" width="20" height="20"/>
                                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="c6O-h9-hBr" secondAttribute="height" multiplier="1:1" id="1wa-Er-6Pr"/>
@@ -530,19 +497,19 @@ no matter where you are</string>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-bE-EtQ">
-                                                        <rect key="frame" x="48" y="411" width="79.5" height="14"/>
+                                                        <rect key="frame" x="48" y="419" width="78.5" height="18"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="12"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-0C-lVV">
-                                                        <rect key="frame" x="20" y="408" width="20" height="20"/>
+                                                        <rect key="frame" x="20" y="418" width="20" height="20"/>
                                                         <connections>
                                                             <action selector="rememberMe:" destination="UzO-BE-i0o" eventType="touchUpInside" id="V9X-Bv-lKz"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMc-Xs-hb1" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="463" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="473" width="291" height="42"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="18"/>
                                                         <state key="normal" title="Log In">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -560,7 +527,7 @@ no matter where you are</string>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99l-cA-PSx">
-                                                        <rect key="frame" x="49.5" y="510" width="232" height="29"/>
+                                                        <rect key="frame" x="51.5" y="520" width="228" height="33"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-light" family="billcorporatenarrowW00-light" pointSize="14"/>
                                                         <state key="normal" title="Forgot your password? Click to reset">
                                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.59639875860000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -622,7 +589,7 @@ no matter where you are</string>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwf-7l-o9O">
-                                                <rect key="frame" x="116" y="667" width="182" height="32"/>
+                                                <rect key="frame" x="119" y="694.5" width="176" height="38"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="17"/>
                                                 <state key="normal" title="Don't have an account?">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -632,20 +599,20 @@ no matter where you are</string>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="ASD-2b-AZV">
-                                                <rect key="frame" x="302.5" y="715" width="70" height="70"/>
+                                                <rect key="frame" x="302.5" y="748.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="1GP-Kd-QdG"/>
                                                     <constraint firstAttribute="width" secondItem="ASD-2b-AZV" secondAttribute="height" multiplier="1:1" id="iLg-hc-Asi"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeT-zu-fA8">
-                                                <rect key="frame" x="314.5" y="787" width="46" height="21"/>
+                                                <rect key="frame" x="316" y="820.5" width="43.5" height="27"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="18"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="935-XU-elp">
-                                                <rect key="frame" x="302.5" y="715" width="70" height="93"/>
+                                                <rect key="frame" x="302.5" y="748.5" width="70" height="99"/>
                                                 <connections>
                                                     <action selector="helpPressed:" destination="UzO-BE-i0o" eventType="touchUpInside" id="isM-ed-vgi"/>
                                                 </connections>
@@ -735,34 +702,34 @@ no matter where you are</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyR-01-r6N">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="738"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="763.5"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQi-LX-jg4">
-                                                <rect key="frame" x="144" y="20" width="126" height="30.5"/>
+                                                <rect key="frame" x="141.5" y="20" width="131" height="39"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="26"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up for Your AwayChat account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap3-fN-kDN">
-                                                <rect key="frame" x="87.5" y="60.5" width="239" height="17.5"/>
+                                                <rect key="frame" x="89.5" y="69" width="235.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZt-F2-97b">
-                                                <rect key="frame" x="41.5" y="98" width="331" height="500"/>
+                                                <rect key="frame" x="41.5" y="111.5" width="331" height="500"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHp-Jb-HIe">
-                                                        <rect key="frame" x="20" y="10" width="69" height="17.5"/>
+                                                        <rect key="frame" x="20" y="10" width="69" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3A-f2-me6" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="32.5" width="291" height="40.5"/>
+                                                        <rect key="frame" x="20" y="37.5" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sFV-5p-LTz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="40.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
                                                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -785,16 +752,16 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oao-38-vGl">
-                                                        <rect key="frame" x="20" y="88" width="37" height="17.5"/>
+                                                        <rect key="frame" x="20" y="94.5" width="37" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6h-ax-JXZ" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="110.5" width="291" height="40.5"/>
+                                                        <rect key="frame" x="20" y="122" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dkJ-ab-mQ8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="40.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
                                                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -817,16 +784,16 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAV-fk-scX">
-                                                        <rect key="frame" x="20" y="166" width="66.5" height="17.5"/>
+                                                        <rect key="frame" x="20" y="179" width="67" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQB-ZE-HFo" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="188.5" width="291" height="41"/>
+                                                        <rect key="frame" x="20" y="206.5" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsw-qO-c3A">
-                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="41"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
                                                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -849,16 +816,16 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhR-yb-dTl">
-                                                        <rect key="frame" x="20" y="244.5" width="119" height="17.5"/>
+                                                        <rect key="frame" x="20" y="263.5" width="118" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Nj-SP-MO6" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="267" width="291" height="40.5"/>
+                                                        <rect key="frame" x="20" y="291" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ba-G8-7vr">
-                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="40.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
                                                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -881,7 +848,8 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-En-jR9" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="349.5" width="291" height="40.5"/>
+                                                        <rect key="frame" x="20" y="375" width="291" height="42"/>
+                                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="17"/>
                                                         <state key="normal" title="Next">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -898,10 +866,10 @@ no matter where you are</string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK7-JN-osU">
-                                                        <rect key="frame" x="47" y="405" width="237" height="28"/>
+                                                        <rect key="frame" x="48.5" y="432" width="234" height="36"/>
                                                         <string key="text">By using this service you are agreeing to the
        terms of service and privacy policy</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="12"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -941,26 +909,26 @@ no matter where you are</string>
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="xg5-dL-0Le">
-                                                <rect key="frame" x="302.5" y="635" width="70" height="70"/>
+                                                <rect key="frame" x="302.5" y="654.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="P1Q-vd-Mu3"/>
                                                     <constraint firstAttribute="width" secondItem="xg5-dL-0Le" secondAttribute="height" multiplier="1:1" id="wMK-NT-y7n"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C30-bL-EYk">
-                                                <rect key="frame" x="314.5" y="707" width="46" height="21"/>
+                                                <rect key="frame" x="316" y="726.5" width="43.5" height="27"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="18"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qO-By-rSn">
-                                                <rect key="frame" x="302.5" y="635" width="70" height="93"/>
+                                                <rect key="frame" x="302.5" y="654.5" width="70" height="99"/>
                                                 <connections>
                                                     <action selector="helpPressed:" destination="6Kq-P1-TjV" eventType="touchUpInside" id="Iy0-6t-l0i"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bV-My-Ca5">
-                                                <rect key="frame" x="108.5" y="603" width="197" height="32"/>
+                                                <rect key="frame" x="107.5" y="616.5" width="199" height="38"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="17"/>
                                                 <state key="normal" title="Already have an account?">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1039,31 +1007,31 @@ no matter where you are</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-tV-3PT">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="638"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="663.5"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKq-Y4-Crv">
-                                                <rect key="frame" x="144" y="20" width="126" height="30.5"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKq-Y4-Crv">
+                                                <rect key="frame" x="141.5" y="20" width="131" height="39"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="26"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up for Your AwayChat account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41E-S5-7pv">
-                                                <rect key="frame" x="87.5" y="60.5" width="239" height="17.5"/>
+                                                <rect key="frame" x="89.5" y="69" width="235.5" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="15"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBE-py-usv">
-                                                <rect key="frame" x="41.5" y="98" width="331" height="400"/>
+                                                <rect key="frame" x="41.5" y="111.5" width="331" height="400"/>
                                                 <subviews>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYm-fl-wh1">
-                                                        <rect key="frame" x="20" y="10" width="73.5" height="17.5"/>
+                                                        <rect key="frame" x="20" y="10" width="73" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vbH-x6-HYW" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="32.5" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="37.5" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IRh-wu-OEF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
@@ -1089,13 +1057,13 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHN-ZL-Egl">
-                                                        <rect key="frame" x="20" y="89.5" width="73" height="17.5"/>
+                                                        <rect key="frame" x="20" y="94.5" width="73" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbw-4Q-oEi" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="112" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="122" width="291" height="42"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGF-QH-1B3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
@@ -1121,14 +1089,43 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio (Select your category &quot;up to 3&quot;)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBl-4a-eSN">
-                                                        <rect key="frame" x="20" y="169" width="237" height="17.5"/>
+                                                        <rect key="frame" x="20" y="179" width="232.5" height="22.5"/>
                                                         <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LeX-Ab-ZEx" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="191.5" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="206.5" width="291" height="42"/>
+                                                        <subviews>
+                                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2fM-gQ-OKW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BVc-av-XfA">
+                                                                    <size key="itemSize" width="26" height="28"/>
+                                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                                </collectionViewFlowLayout>
+                                                                <cells>
+                                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XRN-Zv-y8f">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="26" height="28"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Zrq-8f-CiY">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="26" height="28"/>
+                                                                            <autoresizingMask key="autoresizingMask"/>
+                                                                        </collectionViewCellContentView>
+                                                                        <size key="customSize" width="26" height="28"/>
+                                                                    </collectionViewCell>
+                                                                </cells>
+                                                            </collectionView>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="2fM-gQ-OKW" secondAttribute="bottom" id="2xa-UB-wsy"/>
+                                                            <constraint firstItem="2fM-gQ-OKW" firstAttribute="top" secondItem="LeX-Ab-ZEx" secondAttribute="top" id="47c-b5-Oee"/>
+                                                            <constraint firstItem="2fM-gQ-OKW" firstAttribute="leading" secondItem="LeX-Ab-ZEx" secondAttribute="leading" id="6Mt-ej-FZc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2fM-gQ-OKW" secondAttribute="trailing" id="VRl-h5-cLq"/>
+                                                        </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                                                 <color key="value" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
@@ -1139,7 +1136,8 @@ no matter where you are</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGq-6E-lVd" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="275.5" width="291" height="42"/>
+                                                        <rect key="frame" x="20" y="290.5" width="291" height="42"/>
+                                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="17"/>
                                                         <state key="normal" title="Register">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -1156,10 +1154,10 @@ no matter where you are</string>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09s-jn-iyo">
-                                                        <rect key="frame" x="47" y="332.5" width="237" height="28"/>
+                                                        <rect key="frame" x="48.5" y="347.5" width="234" height="36"/>
                                                         <string key="text">By using this service you are agreeing to the
        terms of service and privacy policy</string>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="12"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1194,26 +1192,26 @@ no matter where you are</string>
                                                 </constraints>
                                             </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="9Rc-fe-jSg">
-                                                <rect key="frame" x="302.5" y="535" width="70" height="70"/>
+                                                <rect key="frame" x="302.5" y="554.5" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="BuA-VY-kGE"/>
                                                     <constraint firstAttribute="width" secondItem="9Rc-fe-jSg" secondAttribute="height" multiplier="1:1" id="Syl-hK-yTI"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39q-jg-DyV">
-                                                <rect key="frame" x="314.5" y="607" width="46" height="21"/>
+                                                <rect key="frame" x="316" y="626.5" width="43.5" height="27"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="18"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZN-xc-vPF">
-                                                <rect key="frame" x="302.5" y="535" width="70" height="93"/>
+                                                <rect key="frame" x="302.5" y="554.5" width="70" height="99"/>
                                                 <connections>
                                                     <action selector="helpPressed:" destination="3jp-kR-VTp" eventType="touchUpInside" id="12f-B4-Ekn"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3u-b3-LTT">
-                                                <rect key="frame" x="108.5" y="503" width="197" height="32"/>
+                                                <rect key="frame" x="107.5" y="516.5" width="199" height="38"/>
                                                 <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="17"/>
                                                 <state key="normal" title="Already have an account?">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1266,6 +1264,7 @@ no matter where you are</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="2fM-gQ-OKW" id="muE-qx-tqs"/>
                         <outlet property="containerView" destination="QBE-py-usv" id="xVj-VX-net"/>
                         <outlet property="firstName_field" destination="IRh-wu-OEF" id="3ZK-Ug-AMC"/>
                         <outlet property="heading_label" destination="vKq-Y4-Crv" id="YyU-oo-ODw"/>
@@ -1275,33 +1274,202 @@ no matter where you are</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tm8-wM-Hgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="-35"/>
+            <point key="canvasLocation" x="1642.0289855072465" y="-35.491071428571423"/>
+        </scene>
+        <!--Forgot PasswordVC-->
+        <scene sceneID="MUN-yL-LyY">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u6K-2h-RIj" customClass="ForgotPasswordVC" customModule="Away_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="tYu-g1-P87">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-eF-jHJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOR-GQ-QkE">
+                                        <rect key="frame" x="141.5" y="20" width="131" height="39"/>
+                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="26"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To set your password as new:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJr-1i-icu">
+                                        <rect key="frame" x="109" y="251" width="196" height="22.5"/>
+                                        <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="15"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-cG-tIw">
+                                        <rect key="frame" x="41.5" y="298.5" width="331" height="221.5"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Your Email Address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQy-CE-Hje">
+                                                <rect key="frame" x="20" y="40" width="168" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-medium" family="billcorporatenarrowW00-medium" pointSize="15"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XrC-vv-gj0" customClass="DesignableView" customModule="Away_Chat" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="67.5" width="291" height="42"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVA-PN-DlL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="291" height="42"/>
+                                                        <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="gVA-PN-DlL" secondAttribute="trailing" id="1cQ-xm-cIr"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gVA-PN-DlL" secondAttribute="bottom" id="8iN-oS-trb"/>
+                                                    <constraint firstItem="gVA-PN-DlL" firstAttribute="top" secondItem="XrC-vv-gj0" secondAttribute="top" id="MDa-cl-6j0"/>
+                                                    <constraint firstAttribute="height" constant="42" id="VdT-xa-SMX"/>
+                                                    <constraint firstItem="gVA-PN-DlL" firstAttribute="leading" secondItem="XrC-vv-gj0" secondAttribute="leading" id="pl6-1J-hDX"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbX-uj-8Jt" customClass="DesignableButton" customModule="Away_Chat" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="139.5" width="291" height="42"/>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="17"/>
+                                                <state key="normal" title="Continue">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                                        <color key="value" red="0.98039215690000003" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continuePressed:" destination="u6K-2h-RIj" eventType="touchUpInside" id="gH6-WP-6Qc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PbX-uj-8Jt" secondAttribute="bottom" constant="40" id="2TI-UR-qIx"/>
+                                            <constraint firstItem="PbX-uj-8Jt" firstAttribute="top" secondItem="gVA-PN-DlL" secondAttribute="bottom" constant="30" id="6b3-62-XVk"/>
+                                            <constraint firstItem="BQy-CE-Hje" firstAttribute="top" secondItem="qDP-cG-tIw" secondAttribute="top" constant="40" id="AOh-N7-Law"/>
+                                            <constraint firstItem="PbX-uj-8Jt" firstAttribute="trailing" secondItem="XrC-vv-gj0" secondAttribute="trailing" id="Ltv-IV-YsB"/>
+                                            <constraint firstItem="PbX-uj-8Jt" firstAttribute="leading" secondItem="XrC-vv-gj0" secondAttribute="leading" id="P8M-kG-x9f"/>
+                                            <constraint firstItem="XrC-vv-gj0" firstAttribute="top" secondItem="BQy-CE-Hje" secondAttribute="bottom" constant="5" id="Xtk-5Y-6t2"/>
+                                            <constraint firstAttribute="trailing" secondItem="XrC-vv-gj0" secondAttribute="trailing" constant="20" id="fuz-DV-pwC"/>
+                                            <constraint firstItem="BQy-CE-Hje" firstAttribute="leading" secondItem="qDP-cG-tIw" secondAttribute="leading" constant="20" id="iTk-aa-jE6"/>
+                                            <constraint firstItem="PbX-uj-8Jt" firstAttribute="height" secondItem="XrC-vv-gj0" secondAttribute="height" id="onJ-Ls-czZ"/>
+                                            <constraint firstItem="XrC-vv-gj0" firstAttribute="leading" secondItem="BQy-CE-Hje" secondAttribute="leading" id="vPc-pZ-HWH"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFG-lW-iXq">
+                                        <rect key="frame" x="282.5" y="570" width="100" height="102"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="help" translatesAutoresizingMaskIntoConstraints="NO" id="fng-0J-UWH">
+                                                <rect key="frame" x="15" y="0.0" width="70" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fng-0J-UWH" secondAttribute="height" multiplier="1:1" id="3IC-eN-Z38"/>
+                                                    <constraint firstAttribute="width" constant="70" id="awV-0s-gCw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2v-Fi-fGg">
+                                                <rect key="frame" x="28.5" y="72" width="43.5" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="b2r-8m-pJ9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="billcorporatenarrowW00-bold" family="billcorporatenarrowW00-bold" pointSize="18"/>
+                                                <color key="textColor" red="0.98039215690000003" green="0.47058823529999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TlH-d8-OAr">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="102"/>
+                                                <connections>
+                                                    <action selector="helpPressed:" destination="u6K-2h-RIj" eventType="touchUpInside" id="dcq-tJ-dNp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TlH-d8-OAr" secondAttribute="trailing" id="2hz-xA-8BH"/>
+                                            <constraint firstItem="fng-0J-UWH" firstAttribute="top" secondItem="dFG-lW-iXq" secondAttribute="top" id="4qT-Dn-EHP"/>
+                                            <constraint firstAttribute="bottom" secondItem="e2v-Fi-fGg" secondAttribute="bottom" id="5bd-z3-lFy"/>
+                                            <constraint firstAttribute="width" constant="100" id="9na-RH-FxT"/>
+                                            <constraint firstItem="TlH-d8-OAr" firstAttribute="top" secondItem="dFG-lW-iXq" secondAttribute="top" id="K5n-4e-P4W"/>
+                                            <constraint firstItem="TlH-d8-OAr" firstAttribute="leading" secondItem="dFG-lW-iXq" secondAttribute="leading" id="XEF-RL-QXg"/>
+                                            <constraint firstItem="e2v-Fi-fGg" firstAttribute="centerX" secondItem="fng-0J-UWH" secondAttribute="centerX" id="bJY-cU-Rmw"/>
+                                            <constraint firstItem="e2v-Fi-fGg" firstAttribute="top" secondItem="fng-0J-UWH" secondAttribute="bottom" constant="2" id="ePW-CA-NPY"/>
+                                            <constraint firstItem="fng-0J-UWH" firstAttribute="centerX" secondItem="dFG-lW-iXq" secondAttribute="centerX" id="kke-7U-vDn"/>
+                                            <constraint firstAttribute="bottom" secondItem="TlH-d8-OAr" secondAttribute="bottom" id="rMi-ek-JJ7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qDP-cG-tIw" firstAttribute="centerX" secondItem="cCN-eF-jHJ" secondAttribute="centerX" id="5jc-3L-Ehw"/>
+                                    <constraint firstItem="qDP-cG-tIw" firstAttribute="centerY" secondItem="cCN-eF-jHJ" secondAttribute="centerY" id="6Jq-ih-hXo"/>
+                                    <constraint firstItem="dFG-lW-iXq" firstAttribute="trailing" secondItem="qDP-cG-tIw" secondAttribute="trailing" constant="10" id="GmG-uq-cYc"/>
+                                    <constraint firstItem="qDP-cG-tIw" firstAttribute="top" secondItem="gJr-1i-icu" secondAttribute="bottom" constant="25" id="T9h-Q0-fuD"/>
+                                    <constraint firstItem="gJr-1i-icu" firstAttribute="centerX" secondItem="qDP-cG-tIw" secondAttribute="centerX" id="U8L-Ck-ytG"/>
+                                    <constraint firstItem="OOR-GQ-QkE" firstAttribute="top" secondItem="cCN-eF-jHJ" secondAttribute="top" constant="20" id="cNh-u1-19N"/>
+                                    <constraint firstItem="qDP-cG-tIw" firstAttribute="width" secondItem="cCN-eF-jHJ" secondAttribute="width" multiplier="0.8" id="mWB-tS-hOB"/>
+                                    <constraint firstItem="OOR-GQ-QkE" firstAttribute="centerX" secondItem="cCN-eF-jHJ" secondAttribute="centerX" id="tWf-OB-uUh"/>
+                                    <constraint firstItem="dFG-lW-iXq" firstAttribute="top" secondItem="qDP-cG-tIw" secondAttribute="bottom" constant="50" id="zNN-NT-i6Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NfE-Uo-evg"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NfE-Uo-evg" firstAttribute="bottom" secondItem="cCN-eF-jHJ" secondAttribute="bottom" id="9Li-zK-adY"/>
+                            <constraint firstItem="cCN-eF-jHJ" firstAttribute="top" secondItem="NfE-Uo-evg" secondAttribute="top" id="Hq6-Aj-kfX"/>
+                            <constraint firstItem="NfE-Uo-evg" firstAttribute="trailing" secondItem="cCN-eF-jHJ" secondAttribute="trailing" id="Iz5-nz-hEz"/>
+                            <constraint firstItem="cCN-eF-jHJ" firstAttribute="leading" secondItem="NfE-Uo-evg" secondAttribute="leading" id="XCv-3a-KYn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="qDP-cG-tIw" id="ee4-Ae-IvX"/>
+                        <outlet property="email_field" destination="gVA-PN-DlL" id="GmR-X7-pgu"/>
+                        <outlet property="subtitle_label" destination="gJr-1i-icu" id="cks-AB-Ieo"/>
+                        <outlet property="title_lable" destination="OOR-GQ-QkE" id="cDw-5H-kLr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y3K-OO-9dI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2305.7971014492755" y="-35.491071428571423"/>
         </scene>
     </scenes>
     <designables>
-        <designable name="Emn-xj-GOj">
-            <size key="intrinsicContentSize" width="83" height="29"/>
-        </designable>
         <designable name="Ft1-00-YZO">
-            <size key="intrinsicContentSize" width="40" height="29"/>
+            <size key="intrinsicContentSize" width="83" height="33"/>
         </designable>
         <designable name="MMc-Xs-hb1">
-            <size key="intrinsicContentSize" width="51" height="33"/>
+            <size key="intrinsicContentSize" width="49" height="39"/>
+        </designable>
+        <designable name="PbX-uj-8Jt">
+            <size key="intrinsicContentSize" width="68" height="38"/>
         </designable>
         <designable name="Qq0-En-jR9">
-            <size key="intrinsicContentSize" width="32" height="30"/>
+            <size key="intrinsicContentSize" width="36" height="38"/>
         </designable>
         <designable name="W7W-fa-0LW">
-            <size key="intrinsicContentSize" width="51" height="29"/>
+            <size key="intrinsicContentSize" width="39" height="33"/>
         </designable>
         <designable name="jGq-6E-lVd">
-            <size key="intrinsicContentSize" width="57" height="30"/>
+            <size key="intrinsicContentSize" width="62" height="38"/>
         </designable>
     </designables>
     <resources>
+        <image name="Apple" width="64" height="64"/>
+        <image name="Fb" width="64" height="64"/>
+        <image name="Gmail" width="64" height="64"/>
+        <image name="Twitter" width="64" height="64"/>
         <image name="help" width="161" height="161"/>
-        <image name="instagram" width="23" height="23"/>
-        <image name="logo_image" width="880" height="777"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

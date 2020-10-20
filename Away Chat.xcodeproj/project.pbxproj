@@ -10,6 +10,9 @@
 		489E2BED8998233F6F84FA31 /* Pods_Away_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4897A868FA2854111637D7B7 /* Pods_Away_Chat.framework */; };
 		BB205653253A0B4900AC39E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB205652253A0B4900AC39E0 /* Constants.swift */; };
 		BB58F666253B2867003A5C6B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB58F665253B2867003A5C6B /* LoginVC.swift */; };
+		BB702C1F253E1A5F00368AE0 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB702C1E253E1A5F00368AE0 /* ForgotPasswordVC.swift */; };
+		BB702C2B253E21C100368AE0 /* BioTagsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB702C2A253E21C100368AE0 /* BioTagsCell.swift */; };
+		BB702C2E253E21F800368AE0 /* BioTagsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB702C2D253E21F800368AE0 /* BioTagsCell.xib */; };
 		BBDAC499253B2DE70095B635 /* bill_corporate narrow_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC496253B2DE70095B635 /* bill_corporate narrow_light.ttf */; };
 		BBDAC49A253B2DE70095B635 /* bill_corporate_narrow_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC497253B2DE70095B635 /* bill_corporate_narrow_medium.ttf */; };
 		BBDAC49B253B2DE70095B635 /* bill_corporate narrow_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBDAC498253B2DE70095B635 /* bill_corporate narrow_bold.ttf */; };
@@ -39,6 +42,9 @@
 		4897A868FA2854111637D7B7 /* Pods_Away_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Away_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB205652253A0B4900AC39E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BB58F665253B2867003A5C6B /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BB702C1E253E1A5F00368AE0 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		BB702C2A253E21C100368AE0 /* BioTagsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioTagsCell.swift; sourceTree = "<group>"; };
+		BB702C2D253E21F800368AE0 /* BioTagsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BioTagsCell.xib; sourceTree = "<group>"; };
 		BBDAC496253B2DE70095B635 /* bill_corporate narrow_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bill_corporate narrow_light.ttf"; sourceTree = "<group>"; };
 		BBDAC497253B2DE70095B635 /* bill_corporate_narrow_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bill_corporate_narrow_medium.ttf; sourceTree = "<group>"; };
 		BBDAC498253B2DE70095B635 /* bill_corporate narrow_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bill_corporate narrow_bold.ttf"; sourceTree = "<group>"; };
@@ -113,6 +119,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BB702C27253E217000368AE0 /* CellClasses */ = {
+			isa = PBXGroup;
+			children = (
+				BB702C28253E217D00368AE0 /* CollectionViewCells */,
+			);
+			path = CellClasses;
+			sourceTree = "<group>";
+		};
+		BB702C28253E217D00368AE0 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BB702C29253E219200368AE0 /* BioTagsCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		BB702C29253E219200368AE0 /* BioTagsCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB702C2A253E21C100368AE0 /* BioTagsCell.swift */,
+				BB702C2D253E21F800368AE0 /* BioTagsCell.xib */,
+			);
+			path = BioTagsCell;
+			sourceTree = "<group>";
+		};
 		BBDAC4C6253B88370095B635 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +191,7 @@
 		BBF39E132538C03D00AE5537 /* Away Chat */ = {
 			isa = PBXGroup;
 			children = (
+				BB702C27253E217000368AE0 /* CellClasses */,
 				BBDAC4D4253B8CA40095B635 /* Validator */,
 				BB58F663253B279E003A5C6B /* Model */,
 				BBF39E2C2538C13E00AE5537 /* View */,
@@ -177,21 +209,22 @@
 			path = "Away Chat";
 			sourceTree = "<group>";
 		};
-		BBF39E2A2538C0F000AE5537 /* LoginViews */ = {
+		BBF39E2A2538C0F000AE5537 /* LoginFlow */ = {
 			isa = PBXGroup;
 			children = (
 				BBF39E2E2538C3E100AE5537 /* ViewController.swift */,
 				BB58F665253B2867003A5C6B /* LoginVC.swift */,
 				BBDAC4A1253B6C950095B635 /* SignUpFirstVC.swift */,
 				BBDAC4A4253B70010095B635 /* SignUpSecondVC.swift */,
+				BB702C1E253E1A5F00368AE0 /* ForgotPasswordVC.swift */,
 			);
-			path = LoginViews;
+			path = LoginFlow;
 			sourceTree = "<group>";
 		};
 		BBF39E2C2538C13E00AE5537 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BBF39E2A2538C0F000AE5537 /* LoginViews */,
+				BBF39E2A2538C0F000AE5537 /* LoginFlow */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB702C2E253E21F800368AE0 /* BioTagsCell.xib in Resources */,
 				BBF39E212538C03E00AE5537 /* LaunchScreen.storyboard in Resources */,
 				BBDAC4A9253B82FF0095B635 /* GoogleService-Info.plist in Resources */,
 				BBF39E1E2538C03E00AE5537 /* Assets.xcassets in Resources */,
@@ -368,6 +402,7 @@
 				BBF39E152538C03D00AE5537 /* AppDelegate.swift in Sources */,
 				BBDAC4DA253B91830095B635 /* EmailValidation.swift in Sources */,
 				BBDAC4DF253C3C8A0095B635 /* UIViewController+Extension.swift in Sources */,
+				BB702C2B253E21C100368AE0 /* BioTagsCell.swift in Sources */,
 				BB58F666253B2867003A5C6B /* LoginVC.swift in Sources */,
 				BBDAC49F253B5D7B0095B635 /* UIView+Extension.swift in Sources */,
 				BBDAC4CD253B88D80095B635 /* SignUpRequest.swift in Sources */,
@@ -377,6 +412,7 @@
 				BBDAC4D0253B8B050095B635 /* CredentialValidator.swift in Sources */,
 				BBF39E412538D2ED00AE5537 /* String+Extension.swift in Sources */,
 				BBDAC4D6253B8D130095B635 /* ValidatorResponse.swift in Sources */,
+				BB702C1F253E1A5F00368AE0 /* ForgotPasswordVC.swift in Sources */,
 				BBF39E172538C03D00AE5537 /* SceneDelegate.swift in Sources */,
 				BBDAC4C8253B886E0095B635 /* SignUpViewModel.swift in Sources */,
 				BBDAC4A5253B70010095B635 /* SignUpSecondVC.swift in Sources */,
@@ -528,7 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Q634AG3N6;
+				DEVELOPMENT_TEAM = 69YLC635WW;
 				INFOPLIST_FILE = "Away Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,7 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Q634AG3N6;
+				DEVELOPMENT_TEAM = 69YLC635WW;
 				INFOPLIST_FILE = "Away Chat/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

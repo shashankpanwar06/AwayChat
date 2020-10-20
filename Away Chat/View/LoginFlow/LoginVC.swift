@@ -37,7 +37,7 @@ class LoginVC: UIViewController {
         super.viewDidAppear(animated)
  
         
-        self.containerView.shadowAroundView(shadowColor: UIColor(red: 246.0/255.0, green: 246.0/255.0, blue: 246.0/255.0, alpha: 1.0))
+        self.containerView.shadowAroundView(shadowColor: LOGIN_SHADOW_COLOR)
     }
     
     
@@ -77,6 +77,8 @@ class LoginVC: UIViewController {
     
     @IBAction func resetPassword(_ sender: UIButton) {
         print("Forgot Password Pressed!")
+        let VC = self.storyboard?.instantiateViewController(withIdentifier: "ForgotPasswordVC") as! ForgotPasswordVC
+        self.navigationController?.pushViewController(VC, animated: true)
     }
     
     //MARK:- Don't have account button action.
