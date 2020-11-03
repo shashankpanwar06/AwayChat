@@ -1,18 +1,24 @@
 //
-//  DesignableButton.swift
+//  DesignableView.swift
 //  Away Chat
 //
-//  Created by Sukhwinder singh Warring on 16/10/20.
+//  Created by Sukhwinder singh Warring on 22/10/20.
 //
 
 import Foundation
 import UIKit
 
 
-//MARK:- UIButton.
-
-@IBDesignable
-class DesignableButton: UIButton {
+class DesignableView: UIView {
+    
+    
+    @IBInspectable
+    var bgColor:UIColor = UIColor.clear{
+        
+        didSet{
+            self.backgroundColor = bgColor
+        }
+    }
     
     @IBInspectable
     var cornerRadius:CGFloat = 0.0{
@@ -40,4 +46,4 @@ class DesignableButton: UIButton {
     }
     
     
-}//.
+}//..

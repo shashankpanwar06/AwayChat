@@ -7,6 +7,15 @@
 
 import UIKit
 import Firebase
+import IQKeyboardManagerSwift
+
+
+enum Environment : String{
+    case development = "Development"
+    case production = "Production"
+}
+
+var environment : Environment = .development
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,17 +27,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         FirebaseApp.configure()
-        print("Hello")
+        setGlobalEnvironment()
+        IQKeyboardManager.shared.enable = true
         
         return true
     }
 
 }
 
+func setGlobalEnvironment(){
+    #if DEVELOPMENT
+    environment = Environment.development
+    #else
+    environment = Environment.production
+    #endif
+}
+
 
 
 //Scene Delegates.
-
 @available(iOS 13.0, *)
 extension AppDelegate{
     
